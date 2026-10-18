@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Support – QuickBill</title>
+<meta name="description" content="Get help with QuickBill: contact us and read answers to common questions.">
+<style>
+  :root {
+    --ink: #1b1535;
+    --muted: #5b5675;
+    --paper: #ffffff;
+    --tint: #f3effe;
+    --line: #e4dff3;
+    --brand: #5a00c8;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #edeaf8;
+      --muted: #a9a3c4;
+      --paper: #14102b;
+      --tint: #221b45;
+      --line: #2f2759;
+      --brand: #c2a5ff;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+
+  header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .brand { display: flex; align-items: center; gap: 0.6rem; font-weight: 700; font-size: 1.1rem; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
+  nav { display: flex; gap: 1.25rem; font-size: 0.95rem; }
+
+  a { color: var(--brand); text-underline-offset: 3px; }
+  a:focus-visible, summary:focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; border-radius: 4px; }
+
+  h1 { font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.1; letter-spacing: -0.025em; margin: 3.25rem 0 0.5rem; }
+
+  .contact { background: var(--tint); border-radius: 18px; padding: 1.5rem; margin: 2rem 0 2.5rem; }
+  .contact p { margin: 0; }
+  .contact .lead { font-size: 1.3rem; line-height: 1.45; font-weight: 600; letter-spacing: -0.01em; }
+  .contact .lead a { word-break: break-word; }
+  .contact .more { margin-top: 0.75rem; color: var(--muted); }
+
+  h2 { font-size: 1.25rem; line-height: 1.3; letter-spacing: -0.01em; margin: 2.5rem 0 0.5rem; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.4rem; }
+
+  .faq { margin-top: 0.75rem; }
+  details { border-top: 1px solid var(--line); padding: 0.9rem 0; }
+  details:last-of-type { border-bottom: 1px solid var(--line); }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin: 0.6rem 0 0; }
+
+  footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
+  footer p { margin: 0 0 0.35rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <a class="brand" href="support.html" aria-label="QuickBill">
+      <svg width="30" height="30" viewBox="0 0 120 120" aria-hidden="true">
+        <rect width="120" height="120" rx="28" fill="#6B00EC"/>
+        <path d="M29.2 16H71L90.8 35.8V104H29.2Z" fill="#fff"/>
+        <path d="M71 16V35.8H90.8Z" fill="#CDBDFF"/>
+        <path d="M66.05 39.1L45.15 69.9H58.35L51.75 89.7L74.85 58.9H61.65Z" fill="#F5B31B"/>
+      </svg>
+      QuickBill
+    </a>
+    <nav>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html" aria-current="page">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>QuickBill support</h1>
+
+    <div class="contact">
+      <p class="lead">Questions, bug reports or ideas? Email <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a>.</p>
+      <p class="more">We usually reply within two business days.</p>
+    </div>
+
+    <h2>What to include in your email</h2>
+    <p>The more we know, the faster we can help:</p>
+    <ul>
+      <li>What you were trying to do, and what happened instead</li>
+      <li>Your phone model and iOS version</li>
+      <li>The QuickBill version, shown at the bottom of Settings</li>
+      <li>A screenshot, if you have one</li>
+    </ul>
+    <p>Please don’t send backup files or customer information unless we ask for it.</p>
+
+    <h2>Common questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Do I need an account?</summary>
+        <p>No. QuickBill works without signing up, and your data stays on your phone.</p>
+      </details>
+
+      <details>
+        <summary>How do I back up my invoices?</summary>
+        <p>Open Settings → Backup &amp; restore → Export backup, then save the file to Files, iCloud Drive or your email. Do this regularly, because your invoices live only on your phone.</p>
+      </details>
+
+      <details>
+        <summary>How do I move to a new phone?</summary>
+        <p>On the old phone, export a backup. Move the file to the new phone, then open Settings → Backup &amp; restore → Import backup and choose Replace all.</p>
+      </details>
+
+      <details>
+        <summary>Why am I not getting payment reminders?</summary>
+        <p>Turn on Settings → Payment reminders and allow notifications when your phone asks. Reminders only arrive for invoices that have a due date and aren’t marked Paid, and they arrive at 9:00 AM. If you turned notifications off earlier, switch them back on in your phone’s Settings → Notifications → QuickBill.</p>
+      </details>
+
+      <details>
+        <summary>Can I invoice in different currencies?</summary>
+        <p>Yes. Each invoice keeps the currency it was created in. Change the currency for new invoices in Settings → Currency. The Dashboard shows totals for each currency separately.</p>
+      </details>
+
+      <details>
+        <summary>How do I add my VAT, GST or sales tax number?</summary>
+        <p>Open Settings → Tax, choose the tax name, enter your number and default rate, and tap Save tax settings.</p>
+      </details>
+
+      <details>
+        <summary>How do I delete my data?</summary>
+        <p>Delete invoices one by one from their screens, use Settings → Reset app to clear your business profile and logo, or delete the app to remove everything. Nothing is stored on our servers.</p>
+      </details>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 {{DEVELOPER_NAME}}</p>
+    <p><a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
